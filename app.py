@@ -98,12 +98,3 @@ if uploaded_file is not None:
         st.write(translated_text_gpt4o)
         st.write("Translation complete with GPT-4!")
 
-        # Save the combined translated text into text files
-        output_text_file_gemini = "translated_document_gemini.txt"
-        save_text_to_file(translated_text_gemini, output_text_file_gemini)
-        st.write("Translation saved to text file (Gemini)!")
-
-        output_text_file_gpt4o = "translated_document_gpt4o.txt"
-        save_text_to_file(translated_text_gpt4o, output_text_file_gpt4o)
-        st.write("Translation saved to text file (GPT-4)!")
-
