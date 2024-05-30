@@ -1,0 +1,216 @@
+Guide d'étude pour l'examen DP-203 : Ingénierie des données sur Microsoft Azure
+Article • 19/09/2023
+Ce guide d'étude doit vous aider à comprendre à quoi vous attendre lors de l'examen et inclut un résumé des sujets que l'examen pourrait couvrir et des liens vers des ressources supplémentaires. Les informations et les documents de ce document doivent vous aider à cibler vos études pendant que vous vous préparez à l'examen.
+Liens utiles Description
+Consultez les compétences évaluées au 2 novembre 2023. Cette liste représente les compétences évaluées APRÈS la date indiquée. Étudiez cette liste si vous prévoyez de passer l'examen APRÈS cette date.
+Consultez les compétences évaluées avant le 2 novembre 2023. Étudiez cette liste de compétences si vous passez votre examen AVANT la date indiquée.
+Journal des modifications Vous pouvez accéder directement au journal des modifications si vous souhaitez voir les modifications qui seront apportées à la date indiquée.
+Comment obtenir la certification Certaines certifications nécessitent uniquement de réussir un examen, tandis que d'autres nécessitent de réussir plusieurs examens.
+Renouvellement de la certification Les certifications Microsoft Associate, Expert et Specialty expirent chaque année. Vous pouvez les renouveler en réussissant une évaluation en ligne gratuite sur Microsoft Learn.
+Votre profil Microsoft Learn Connecter votre profil de certification à Microsoft Learn vous permet de planifier et de renouveler des examens, ainsi que de partager et d'imprimer des certificats.
+Notation de l'examen et rapports de notes Une note de 700 ou plus est requise pour réussir.
+Sandbox d'examen Vous pouvez explorer l'environnement d'examen en visitant notre sandbox d'examen.
+Demander des aménagements Si vous utilisez des appareils d'assistance, avez besoin de temps supplémentaire ou avez besoin d'une modification d'une partie de l'expérience d'examen, vous pouvez demander un aménagement. Objectif de ce document
+ﾉ Développer le tableau
+12/05/24, 11:51 AM Guide d'étude pour l'examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn
+https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 1/15Liens utiles Description
+Passer une évaluation pratique gratuite Testez vos compétences avec des questions pratiques pour vous aider à vous préparer à l'examen.
+Nos examens sont mis à jour régulièrement pour refléter les compétences requises pour exercer un rôle. Nous avons inclus deux versions des objectifs des compétences évaluées en fonction de la date à laquelle vous passez l'examen.
+Nous mettons toujours à jour la version anglaise de l'examen en premier. Certains examens sont localisés dans d'autres langues, et ceux-ci sont mis à jour environ huit semaines après la mise à jour de la version anglaise. Bien que Microsoft fasse tout son possible pour mettre à jour les versions localisées comme indiqué, il peut arriver que les versions localisées d'un examen ne soient pas mises à jour selon ce calendrier. Les autres langues disponibles sont répertoriées dans la section Planifier un examen de la page Web Détails de l'examen. Si l'examen n'est pas disponible dans votre langue préférée, vous pouvez demander 30 minutes supplémentaires pour le terminer.
+Les puces qui suivent chacune des compétences évaluées visent à illustrer comment nous évaluons cette compétence. Des sujets connexes peuvent être abordés dans l'examen.
+La plupart des questions couvrent des fonctionnalités en disponibilité générale (GA). L'examen peut contenir des questions sur des fonctionnalités en préversion si ces fonctionnalités sont couramment utilisées.
+En tant que candidat à cet examen, vous devez posséder une expertise dans l'intégration, la transformation et la consolidation de données provenant de divers systèmes de données structurées, non structurées et en streaming dans un schéma approprié pour la création de solutions d'analyse.
+En tant qu'ingénieur de données Azure, vous aidez les parties prenantes à comprendre les données par l'exploration, et vous créez et maintenez des pipelines de traitement de données sécurisés et conformes à l'aide de différents outils et techniques. Vous utilisez divers services de données Azure et des
+Mises à jour de l'examen
+Remarque
+Remarque
+Compétences évaluées au 2 novembre 2023
+Profil d'audience12/05/24, 11:51 AM Guide d'étude pour l'examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn
+https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 2/15cadres pour stocker et produire des ensembles de données nettoyés et améliorés pour l'analyse. Ce magasin de données peut être conçu avec différents modèles d'architecture en fonction des exigences de l'entreprise, notamment :
+Entrepôt de données de gestion (MDW)
+Big Data
+Architecture Lakehouse
+En tant qu'ingénieur de données Azure, vous contribuez également à garantir que l'opérationnalisation des pipelines de données et des magasins de données est performante, efficace, organisée et fiable, compte tenu d'un ensemble d'exigences et de contraintes commerciales. Vous aidez à identifier et à résoudre les problèmes opérationnels et de qualité des données. Vous concevez, implémentez, surveillez et optimisez également les plateformes de données pour répondre aux pipelines de données.
+En tant que candidat à cet examen, vous devez avoir une solide connaissance des langages de traitement des données, notamment :
+SQL
+Python
+Scala
+Vous devez comprendre les modèles d'architecture de données et de traitement parallèle. Vous devez maîtriser l'utilisation des éléments suivants pour créer des solutions de traitement des données :
+Azure Data Factory
+Azure Synapse Analytics
+Azure Stream Analytics
+Azure Event Hubs
+Azure Data Lake Storage
+Azure Databricks
+Concevoir et implémenter le stockage de données (15 à 20 %)
+Développer le traitement des données (40 à 45 %)
+Sécuriser, surveiller et optimiser le stockage des données et le traitement des données
+(30–35 %) Compétences en un coup d’œil 5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 3/15 Implémenter une stratégie de partitionnement pour les fichiers Implémenter une stratégie de partitionnement pour les charges de travail analytiques Implémenter une stratégie de partitionnement pour les charges de travail de streaming Implémenter une stratégie de partitionnement pour Azure Synapse Analytics Identifier quand le partitionnement est nécessaire dans Azure Data Lake Storage Gen2 Créer et exécuter des requêtes à l’aide d’une solution de calcul qui exploite SQL sans serveur et un cluster Spark Recommander et implémenter des modèles de base de données Azure Synapse Analytics Envoyer une nouvelle ou une lignée de données mise à jour vers Microsoft Purview Parcourir et rechercher des métadonnées dans le catalogue de données Microsoft Purview Concevoir et implémenter des chargements incrémentiels Transformer des données à l’aide d’Apache Spark Transformer des données à l’aide de Transact-SQL (T-SQL) dans Azure Synapse Analytics Ingérer et transformer des données à l’aide d’Azure Synapse Pipelines ou d’Azure Data Factory Transformer des données à l’aide d’Azure Stream Analytics Nettoyer les données Gérer les données en double Éviter les données en double à l’aide de la livraison Exactly Once d’Azure Stream Analytics Concevoir et implémenter le stockage de données (15–20 %) Implémenter une stratégie de partitionnement Concevoir et implémenter la couche d’exploration des données Développer le traitement des données (40–45 %) Ingérer et transformer des données 5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 4/15 Gérer les données manquantes Gérer les données arrivant en retard Diviser les données Déchiqueter JSON Encoder et décoder des données Configurer la gestion des erreurs pour une transformation Normaliser et dénormaliser les données Effectuer une analyse exploratoire des données Développer des solutions de traitement par lots à l’aide d’Azure Data Lake Storage, Azure Databricks, Azure Synapse Analytics et Azure Data Factory Utiliser PolyBase pour charger des données dans un pool SQL Implémenter Azure Synapse Link et interroger les données répliquées Créer des pipelines de données Mettre à l’échelle les ressources Configurer la taille du lot Créer des tests pour les pipelines de données Intégrer des notebooks Jupyter ou Python dans un pipeline de données Mettre à jour les données Rétablir les données à un état antérieur Configurer la gestion des exceptions Configurer la rétention des lots Lire et écrire dans un lac Delta Développer une solution de traitement par lots Développer une solution de traitement de flux 5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 5/15 Créer une solution de traitement de flux à l’aide de Stream Analytics et Azure Event Hubs Traiter des données à l’aide du streaming structuré Spark Créer des agrégats fenêtrés Gérer la dérive de schéma Traiter des données de séries chronologiques Traiter des données sur des partitions Traiter au sein d’une partition Configurer des points de contrôle et le marquage pendant le traitement Mettre à l’échelle les ressources Créer des tests pour les pipelines de données Optimiser les pipelines à des fins analytiques ou transactionnelles Gérer les interruptions Configurer la gestion des exceptions Mettre à jour les données Rejouer les données de flux archivées Déclencher des lots Gérer les chargements de lots ayant échoué Valider les chargements de lots Gérer les pipelines de données dans Azure Data Factory ou Azure Synapse Pipelines Planifier des pipelines de données dans Data Factory ou Azure Synapse Pipelines Implémenter le contrôle de version pour les artefacts de pipeline Gérer les tâches Spark dans un pipeline Gérer les lots et les pipelines 5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 6/15 Implémenter le masquage des données Chiffrer les données au repos et en mouvement Implémenter la sécurité au niveau des lignes et des colonnes Implémenter le contrôle d’accès basé sur les rôles Azure (RBAC) Implémenter des listes de contrôle d’accès de type POSIX (ACL) pour Data Lake Storage Gen2 Implémenter une stratégie de rétention des données Implémenter des points de terminaison sécurisés (privés et publics) Implémenter des jetons de ressource dans Azure Databricks Charger un DataFrame avec des informations sensibles Écrire des données chiffrées dans des tables ou des fichiers Parquet Gérer les informations sensibles Implémenter la journalisation utilisée par Azure Monitor Configurer les services de surveillance Surveiller le traitement de flux Mesurer les performances du déplacement des données Surveiller et mettre à jour les statistiques sur les données dans un système Surveiller les performances du pipeline de données Mesurer les performances des requêtes Planifier et surveiller les tests de pipeline Interpréter les métriques et les journaux d’Azure Monitor Sécuriser, surveiller et optimiser le stockage des données et le traitement des données (30–35 %) Implémenter la sécurité des données Surveiller le stockage des données et le traitement des données 5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 7/15 Implémenter une stratégie d’alerte de pipeline Compacter les petits fichiers Gérer l’asymétrie dans les données Gérer le débordement de données Optimiser la gestion des ressources Ajuster les requêtes à l’aide d’indexeurs Ajuster les requêtes à l’aide du cache Dépanner une tâche Spark ayant échoué Dépanner une exécution de pipeline ayant échoué, y compris les activités
+liens exécutés dans des services externes
+Nous vous recommandons de vous entraîner et d’acquérir une expérience pratique avant de passer l’examen.
+Nous proposons des options d’auto-apprentissage et de formation en classe, ainsi que des liens vers de la documentation,
+des sites communautaires et des vidéos.
+Étudier les ressources Liens vers l’apprentissage et la documentation
+Se former Choisissez parmi des parcours d’apprentissage et des modules à votre rythme ou suivez un
+cours dirigé par un instructeur
+Trouver de la documentation Azure Data Lake Storage
+Azure Synapse Analytics
+Azure Databricks
+Data Factory
+Azure Stream Analytics
+Event Hubs
+Azure Monitor
+Poser une question Microsoft Q&A | Microsoft Docs
+Obtenir de l’aide de la communauté Analytics sur Azure | T echCommunity
+Azure Synapse Analytics | T echCommunity Optimiser et dépanner le stockage et le traitement des données
+Ressources d’étude
+ﾉDévelopper le tableau
+5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn
+https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 8/15 Étudier les ressources Liens vers l’apprentissage et la documentation
+Suivre Microsoft
+Learn Microsoft Learn - Microsoft T ech Community
+Trouver une vidéo Zone de préparation aux examens
+Data Exposed
+Parcourir d’autres émissions Microsoft Learn
+Clé pour comprendre le tableau : Les groupes de sujets (également appelés groupes fonctionnels) sont
+en gras suivis des objectifs au sein de chaque groupe. Le tableau est une comparaison
+entre les deux versions des compétences d’examen mesurées et la troisième colonne décrit
+l’étendue des changements.
+Domaine de compétence avant le 2 novembre 2023 Domaine de compétence à partir du 2 novembre 2023 Changement
+Profil d’audience Aucun
+changement
+Concevoir et implémenter le stockage de données Concevoir et implémenter le stockage de données Aucun
+changement
+Implémenter une stratégie de partition Implémenter une stratégie de partition Aucun
+changement
+Concevoir et implémenter la couche d’exploration des données Concevoir et implémenter la couche d’exploration des données Aucun
+changement
+Développer le traitement des données Développer le traitement des données Aucun
+changement
+Ingérer et transformer les données Ingérer et transformer les données Mineur
+Développer une solution de traitement par lots Développer une solution de traitement par lots Aucun
+changement
+Développer une solution de traitement en continu Développer une solution de traitement en continu Aucun
+changement
+Gérer les lots et les pipelines Gérer les lots et les pipelines Aucun
+changement
+Sécuriser, surveiller et optimiser le stockage des données et le traitement des données Sécuriser, surveiller et optimiser le stockage des données et le traitement des données Aucun
+changement
+Journal des modifications
+ﾉDévelopper le tableau 5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn
+https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 9/15 Domaine de compétence avant le 2 novembre 2023 Domaine de compétence à partir du 2 novembre 2023 Changement
+Implémenter la sécurité des données Implémenter la sécurité des données Aucun
+changement
+Surveiller le stockage des données et le traitement des données Surveiller le stockage des données et le traitement des données Aucun
+changement
+Optimiser et dépanner le stockage des données et le traitement des données Optimiser et dépanner le stockage des données et le traitement des données Aucun
+changement
+Les candidats à cet examen doivent posséder une expertise en matière d’intégration, de transformation et de consolidation de données provenant de divers systèmes de données structurées, non structurées et en continu dans un schéma approprié pour la création de solutions d’analyse.
+Les ingénieurs de données Azure aident les parties prenantes à comprendre les données par le biais de l’exploration, et ils créent et maintiennent des pipelines de traitement de données sécurisés et conformes à l’aide de différents outils et techniques. Ces professionnels utilisent divers services et frameworks de données Azure pour stocker et produire des ensembles de données nettoyés et améliorés à des fins d’analyse. Ce magasin de données peut être conçu avec différents modèles d’architecture en fonction des besoins de l’entreprise, notamment l’entrepôt de données moderne (MDW), le Big Data ou l’architecture Lakehouse.
+Les ingénieurs de données Azure contribuent également à garantir que l’opérationnalisation des pipelines de données et des magasins de données est performante, efficace, organisée et fiable, compte tenu d’un ensemble d’exigences et de contraintes commerciales. Ces professionnels aident à identifier et à résoudre les problèmes opérationnels et de qualité des données. Ils conçoivent, implémentent, surveillent et optimisent également les plateformes de données pour répondre aux pipelines de données.
+Les candidats à cet examen doivent avoir une solide connaissance des langages de traitement des données, notamment SQL, Python et Scala, et ils doivent comprendre les modèles de traitement parallèle et d’architecture des données. Ils doivent maîtriser l’utilisation d’Azure Data Factory, Azure Synapse Analytics, Azure Stream Analytics, Azure Event Hubs, Azure Data Lake Storage et Azure Databricks pour créer des solutions de traitement des données.
+Concevoir et implémenter le stockage de données (15 à 20 %) Compétences mesurées avant le 2 novembre 2023
+Profil d’audience
+Aperçu des compétences 5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn
+https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 10/15 Développer le traitement des données (40 à 45 %)
+Sécuriser, surveiller et optimiser le stockage des données et le traitement des données (30 à 35 %)
+Implémenter une stratégie de partition pour les fichiers
+Implémenter une stratégie de partition pour les charges de travail analytiques
+Implémenter une stratégie de partition pour la diffusion en continu
+charges de travail
+Implémenter une stratégie de partition pour Azure Synapse Analytics
+Identifier quand le partitionnement est nécessaire dans Azure Data Lake Storage Gen2
+Créer et exécuter des requêtes à l’aide d’une solution de calcul qui exploite SQL
+sans serveur et cluster Spark
+Recommander et implémenter des modèles de base de données Azure Synapse Analytics
+Envoyer une nouvelle lignée de données ou une lignée de données mise à jour vers Microsoft Purview
+Parcourir et rechercher des métadonnées dans le catalogue de données Microsoft Purview
+Concevoir et implémenter des chargements incrémentiels
+Transformer des données à l’aide d’Apache Spark
+Transformer des données à l’aide de Transact-SQL (T-SQL) dans Azure Synapse Analytics
+Ingérer et transformer des données à l’aide d’Azure Synapse Pipelines ou d’Azure Data Factory
+Transformer des données à l’aide d’Azure Stream Analytics
+Nettoyer des donnéesConcevoir et implémenter un stockage de données (15 à 20 %)
+Implémenter une stratégie de partition
+Concevoir et implémenter la couche d’exploration des données
+Développer le traitement des données (40 à 45 %)
+Ingérer et transformer des données5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn
+https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 11/15Gérer les données en double
+Gérer les données manquantes
+Gérer les données arrivant en retard
+Fractionner des données
+Déchiqueter JSON
+Encoder et décoder des données
+Configurer la gestion des erreurs pour une transformation
+Normaliser et dénormaliser des données
+Effectuer une analyse exploratoire des données
+Développer des solutions de traitement par lots à l’aide d’Azure Data Lake Storage, Azure
+Databricks, Azure Synapse Analytics et Azure Data Factory
+Utiliser PolyBase pour charger des données dans un pool SQL
+Implémenter Azure Synapse Link et interroger les données répliquées
+Créer des pipelines de données
+Mettre à l’échelle les ressources
+Configurer la taille du lot
+Créer des tests pour les pipelines de données
+Intégrer des notebooks Jupyter ou Python dans un pipeline de données
+Mettre à jour les données
+Rétablir les données à un état antérieur
+Configurer la gestion des exceptions
+Configurer la rétention des lots
+Lire et écrire dans un lac DeltaDévelopper une solution de traitement par lots5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn
+https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 12/15Créer une solution de traitement en continu à l’aide de Stream Analytics et Azure Event
+Hubs
+Traiter des données à l’aide du streaming structuré Spark
+Créer des agrégats fenêtrés
+Gérer la dérive de schéma
+Traiter des données de séries chronologiques
+Traiter des données entre des partitions
+Traiter au sein d’une partition
+Configurer des points de contrôle et le marquage pendant le traitement
+Mettre à l’échelle les ressources
+Créer des tests pour les pipelines de données
+Optimiser les pipelines à des fins analytiques ou transactionnelles
+Gérer les interruptions
+Configurer la gestion des exceptions
+Mettre à jour les données
+Relire les données de flux archivées
+Déclencher des lots
+Gérer les chargements de lots ayant échoué
+Valider les chargements de lots
+Gérer les pipelines de données dans Azure Data Factory ou Azure Synapse Pipelines
+Planifier des pipelines de données dans Data Factory ou Azure Synapse Pipelines
+Implémenter le contrôle de version pour les artefacts de pipeline
+Gérer les tâches Spark dans un pipelineDévelopper une solution de traitement en continu
+Gérer les lots et les pipelines5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn
+https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 13/15Implémenter le masquage des données
+Chiffrer les données au repos et en mouvement
+Implémenter la sécurité au niveau des lignes et des colonnes
+Implémenter le contrôle d’accès en fonction du rôle Azure (RBAC)
+Implémenter des listes de contrôle d’accès de type POSIX (ACL) pour Data Lake Storage Gen2
+Implémenter une stratégie de rétention des données
+Implémenter des points de terminaison sécurisés (privés et publics)
+Implémenter des jetons de ressource dans Azure Databricks
+Charger un DataFrame avec des informations sensibles
+Écrire des données chiffrées dans des tables ou des fichiers Parquet
+Gérer les informations sensibles
+Implémenter la journalisation utilisée par Azure Monitor
+Configurer les services de surveillance
+Surveiller le traitement en continu
+Mesurer les performances du déplacement des données
+Surveiller et mettre à jour les statistiques sur les données dans un système
+Surveiller les performances du pipeline de données
+Mesurer les performances des requêtes
+Planifier et surveiller les tests de pipeline
+Interpréter les métriques et les journaux d’Azure MonitorSécuriser, surveiller et optimiser le stockage des données et le traitement des données (30 à 35 %)
+Implémenter la sécurité des données
+Surveiller le stockage des données et le traitement des données5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn
+https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 14/15Implémenter une stratégie d’alerte de pipeline
+Compacter les petits fichiers
+Gérer l’asymétrie dans les données
+Gérer le débordement de données
+Optimiser la gestion des ressources
+Ajuster les requêtes à l’aide d’indexeurs
+Ajuster les requêtes à l’aide du cache
+Résoudre les problèmes d’une tâche Spark ayant échoué
+Résoudre les problèmes d’une exécution de pipeline ayant échoué, y compris les activités exécutées dans des services externesOptimiser et résoudre les problèmes de stockage des données et de traitement des données5/12/24, 11:51 AM Guide d’étude pour l’examen DP-203 : Ingénierie des données sur Microsoft Azure | Microsoft Learn
+https://learn.microsoft.com/fr-fr/credentials/certifications/resources/study-guides/dp-203 15/15
