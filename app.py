@@ -6,7 +6,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import AzureChatOpenAI
-from fpdf import FPDF
+import base64
 
 # Load environment variables
 load_dotenv()
@@ -47,7 +47,9 @@ def save_text_to_file(text, file_name):
     with open(file_name, 'w', encoding='utf-8') as f:
         f.write(text)
 
-
+def download_link(text, filename, text_type):
+    b64 = base64.b64encode(text.encode()).decode()  # some strings <-> bytes conversions necessary here
+    return f'<a href="data:text/{text_type};base64,{b64}" download="{filename}">Download {filename}</a>'
 
 # Streamlit UI
 st.title("PDF Translator")
@@ -65,36 +67,37 @@ if uploaded_file is not None:
         # Chunk the text for translation
         text_chunks = chunk_text(pdf_text)
 
-        # Display chunks
-        for i, chunk in enumerate(text_chunks):
-            st.write(f"Chunk {i+1}:")
-            st.write(chunk)
-
         translated_chunks_gemini = []
         translated_chunks_gpt4o = []
 
         for i, chunk in enumerate(text_chunks):
+            st.write(f"Chunk {i+1}:")
+            st.write(chunk)
+
             st.write(f"Translating Chunk {i+1} with Gemini...")
             translated_chunk_gemini = translate_text_chunk(chunk, target_language, model)
             translated_chunks_gemini.append(translated_chunk_gemini)
             st.write(f"Translated Chunk {i+1} with Gemini:")
             st.write(translated_chunk_gemini)
 
-            st.write(f"Translating Chunk {i+1} with GPT-4...")
-            translated_chunk_gpt4o = translate_text_chunk(chunk, target_language, model_gpt4o)
-            translated_chunks_gpt4o.append(translated_chunk_gpt4o)
-            st.write(f"Translated Chunk {i+1} with GPT-4:")
-            st.write(translated_chunk_gpt4o)
+            # st.write(f"Translating Chunk {i+1} with GPT-4...")
+            # translated_chunk_gpt4o = translate_text_chunk(chunk, target_language, model_gpt4o)
+            # translated_chunks_gpt4o.append(translated_chunk_gpt4o)
+            # st.write(f"Translated Chunk {i+1} with GPT-4:")
+            # st.write(translated_chunk_gpt4o)
 
         # Combine the translated chunks
         translated_text_gemini = '\n'.join(translated_chunks_gemini)
-        translated_text_gpt4o = '\n'.join(translated_chunks_gpt4o)
+        # translated_text_gpt4o = '\n'.join(translated_chunks_gpt4o)
 
         st.write("Complete Translation with Gemini:")
         st.write(translated_text_gemini)
         st.write("Translation complete with Gemini!")
 
-        st.write("Complete Translation with GPT-4:")
-        st.write(translated_text_gpt4o)
-        st.write("Translation complete with GPT-4!")
+        # st.write("Complete Translation with GPT-4:")
+        # st.write(translated_text_gpt4o)
+        # st.write("Translation complete with GPT-4!")
 
+        # Provide download links for the translated texts
+        st.markdown(download_link(translated_text_gemini, 'translated_text_gemini.txt', 'plain'), unsafe_allow_html=True)
+        #st.markdown(download_link(translated_text_gpt4o, 'translated_text_gpt4o.txt', 'plain'), unsafe_allow_html=True)
