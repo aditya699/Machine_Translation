@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 from PyPDF2 import PdfReader
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
@@ -9,8 +9,8 @@ from langchain_openai import AzureChatOpenAI
 import base64
 
 # # Load environment variables
-# load_dotenv()
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCTApW3ZLfZ9mLkfli7A_JAZnXFIwsI7s4"
+load_dotenv()
+os.environ["GOOGLE_API_KEY"] = os.getenv("GEMINI_API_KEY")
 # os.environ["AZURE_OPENAI_API_VERSION"] = os.getenv("AZURE_OPENAI_API_VERSION")
 # os.environ["AZURE_OPENAI_ENDPOINT"] = os.getenv("AZURE_OPENAI_ENDPOINT")
 # os.environ["AZURE_OPENAI_API_KEY"] = os.getenv("AZURE_OPENAI_API_KEY")
