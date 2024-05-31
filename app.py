@@ -10,7 +10,7 @@ import base64
 
 # # Load environment variables
 load_dotenv()
-os.environ["GOOGLE_API_KEY"] = os.getenv("GEMINI_API_KEY")
+os.environ["GOOGLE_API_KEY"] = st.secrets["GEMINI_API_KEY"]
 # os.environ["AZURE_OPENAI_API_VERSION"] = os.getenv("AZURE_OPENAI_API_VERSION")
 # os.environ["AZURE_OPENAI_ENDPOINT"] = os.getenv("AZURE_OPENAI_ENDPOINT")
 # os.environ["AZURE_OPENAI_API_KEY"] = os.getenv("AZURE_OPENAI_API_KEY")
